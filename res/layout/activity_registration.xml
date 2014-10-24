@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:onClick="submit"
+            android:text="Submit"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Welcome!"
+            android:textSize="50dp"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/keyinp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="60dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter your CLT Player key here"
+            android:inputType="number|numberSigned|numberDecimal"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+        
+        
+        <TextView
+            android:id="@+id/mac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/submit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="79dp"
+            android:gravity="center"
+            android:text="If you don&apos;t have the key,\nContact your CLT representative and give your \nAndroid Device ID:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/schoolinp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/keyinp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter the School Name" >
+
+            <requestFocus />
+        </EditText>
+
+</RelativeLayout>
